@@ -42,7 +42,6 @@ body{
 .first-sec{
     background: url(images/Frame\ 2.jpg);
     height: 100vh;
-    /* width: 100%; */
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -52,12 +51,14 @@ body{
         text-align: center;
 }
 .intro p{
-    color: #fff;
+    color: #fff
 }
 .intro h1{
     color: #fff;
 }
-
+.button-1{
+ margin-top: -30px;   
+}
 .first-button{
     background-color: #24569c;
         padding: 12px 40px;
@@ -83,9 +84,6 @@ body{
     justify-content: space-between;
     gap: 20px;
     text-align: center;
-}
-.product-img{
-   
 }
 .img-1, .img-2{
     height: 556px;
@@ -226,6 +224,12 @@ width: 80%;
     display: block;
     margin: auto;
     padding-top: 50px;
+}
+.content p{
+    text-align: center;
+}
+.content h3{
+    text-align: center;
 }
 
 .content-section {
