@@ -90,8 +90,8 @@ html{
 }
 .services{
     text-align: center;
-    /* justify-content: center;
-    align-items: center; */
+    justify-content: center;
+    align-items: center;
 }
 .our-services p{
     max-width: 1000px;
@@ -110,10 +110,18 @@ html{
     opacity: 0;
     transition: opacity 2s ease-in-out, transform 2s ease-in-out;
     /* transform: translateX(100%); */
+    transform: translateY(400px);
+}
+.box:nth-of-type(even) {
+    transform: translateX(-100px);
+}
+
+.box.show {
+    transform: translateX(0);
 }
 .services-img.animate{
     opacity: 1;
-        transform: translateX(-15px);
+        transform: translateX(-10px);
 }
 .services-img .box{
     width: 100%;
@@ -239,6 +247,9 @@ html{
     }
     .our-services p{
         padding: 0px;
+    }
+    .services-img .box img{
+        margin-left: 1rem;
     }
 }
 @media (max-width: 768px) {

@@ -20,18 +20,18 @@
 //     observer.observe(elements);
 //   }
 
-// const boxes = document.querySelectorAll(".box");
+const boxes = document.querySelectorAll(".box");
 
-// const checkBoxes = () => {
-//     const triggerBottom = (window.innerHeight / 5) * 4;
-//     boxes.forEach((box) => {
-//           const boxTop = box.getBoundingClientRect().top; if (boxTop < triggerBottom) box.classList.add("show"); else box.classList.remove("stay");
-// }
-//     )
-// };
+const checkBoxes = () => {
+    const triggerBottom = (window.innerHeight / 5) * 4;
+    boxes.forEach((box) => {
+          const boxTop = box.getBoundingClientRect().top; if (boxTop < triggerBottom) box.classList.add("show"); else box.classList.remove("stay");
+}
+    )
+};
 
-// window.addEventListener("scroll", checkBoxes);
-// checkBoxes()
+window.addEventListener("scroll", checkBoxes);
+checkBoxes()
 
 
 
