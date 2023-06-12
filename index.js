@@ -25,10 +25,30 @@
 // const checkBoxes = () => {
 //     const triggerBottom = (window.innerHeight / 5) * 4;
 //     boxes.forEach((box) => {
-//           const boxTop = box.getBoundingClientRect().top; if (boxTop < triggerBottom) box.classList.add("show"); else box.classList.remove("stay");    
+//           const boxTop = box.getBoundingClientRect().top; if (boxTop < triggerBottom) box.classList.add("show"); else box.classList.remove("stay");
 // }
 //     )
 // };
 
 // window.addEventListener("scroll", checkBoxes);
 // checkBoxes()
+
+
+
+      window.addEventListener('scroll', animateOnScroll);
+function animateOnScroll() {
+        const elements = document.querySelectorAll('.services-img');
+
+        elements.forEach(element => {
+          const elementPosition = element.getBoundingClientRect().top;
+          const windowHeight = window.innerHeight;
+
+          if (elementPosition - windowHeight <= 0) {
+            element.classList.add('animate');
+          } else {
+            element.classList.remove('animate');
+          }
+        });
+      }
+
+      window.addEventListener('scroll', animateOnScroll);

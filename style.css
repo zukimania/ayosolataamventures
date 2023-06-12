@@ -90,6 +90,12 @@ html{
 }
 .services{
     text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.our-services p{
+    max-width: 1000px;
+    padding-left: 25%;
 }
 .our-services h1{
     text-decoration: underline;
@@ -101,6 +107,13 @@ html{
     margin: 20px auto;
     columns: 4;
     column-gap: 20px;
+    opacity: 0;
+    transition: opacity 2s ease-in-out, transform 2s ease-in-out;
+    /* transform: translateX(100%); */
+}
+.services-img.animate{
+    opacity: 1;
+        transform: translateX(-15px);
 }
 .services-img .box{
     width: 100%;
@@ -111,6 +124,39 @@ html{
     max-width: 100%;
     border-radius: 15px;
 }
+.services-img .box video{
+    max-width: 100%;
+        border-radius: 15px;
+}
+.team{
+    justify-content: center;
+    align-items: center;
+    place-content: center;
+    align-items: center;
+    text-align: center;
+    background: #24569c;
+    width: 100%;
+}
+.t-p{
+    text-align: center;
+    color: #fff;
+}
+.div-team p{
+    color: #fff;
+}
+.div-team img{
+    width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        object-fit: cover;
+}
+.div-team{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-left: 25%;
+    max-width: 1000px;
+}
 .last-section{
     width: 100%;
     min-height: 100vh;
@@ -120,7 +166,6 @@ html{
     width: 80%;
     display: block;
     margin: auto;
-    padding-top: 100px;
 }
 .content-section{
     float: left;
@@ -128,12 +173,13 @@ html{
 }
 .image-section{
     float: right;
-    width: 30%;
-    margin-top: -10rem;
+    width: 40%;
 }
 .image-section img{
     width: 100%;
-    scale: 0.7;
+    height: auto;
+    margin-top: 20px;
+    /* scale: 0.7; */
 }
  .content-section .title{
     text-transform: uppercase;
@@ -187,6 +233,13 @@ html{
         width: calc(100% - 40px);
         columns: 3;
     }
+    .div-team{
+        flex-direction: column;
+        padding: 0%;
+    }
+    .our-services p{
+        padding: 0px;
+    }
 }
 @media (max-width: 768px) {
     .services-img{
@@ -228,9 +281,6 @@ html{
         float: none;
         display: block;
         text-align: left;
-    }
-    .first-sec{
-        background-attachment: none;
     }
     
     .active {
@@ -281,7 +331,6 @@ width: 80%;
 
 .image-section img {
     width: 100%;
-    scale: 0.7;
 }
 
 .content-section .title {
