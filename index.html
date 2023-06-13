@@ -23,15 +23,17 @@
     <header>
         <div class="topnav" id="myTopnav">
             <a href="#home" class="active">Home</a>
-            <a href="#news">News</a>
-            <a href="#contact">Contact</a>
+            <a href="#our products">Our Products</a>
+            <a href="#services">Our Services</a>
+            <a href="#team">The Team</a>
+            <a href="#contact">Contact Us</a>
             <a href="#about">About</a>
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                 <i class="fa fa-bars"></i>
             </a>
         </div>
     </header>
-    <section class="first-sec">
+    <section class="first-sec" id="home">
         <div class="logo">
           
         </div>
@@ -44,7 +46,7 @@
             <button class="first-button">Contact Us</button>
         </div>
     </section>
-     <section class="second-sec">
+     <section class="second-sec" id="our products">
        <div class="product-h1">
         <h1>Our Products</h1>
        </div>
@@ -52,25 +54,25 @@
         <div class="product-img">
             <img class="img-1" src="images/WhatsApp Image 2022-10-27 at 5.36.57 PM.jpeg" alt="">
             <h3>Rolls</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum corrupti maxime delectus dolores necessitatibus,
-                adipisci enim a natus quia odit esse repellendus illum rem quas deserunt atque nulla quod culpa?</p>
+            <p>A type of nylon that yields more for our customers, with royal blue ink or any preferable ink. <br>Nylon Type
+            
+            28micron, 32micron, 30micron, 34micron</p> <br>
+            <p class="price-1">*Prices varies*</p>
         </div>
         <div class="product-h3">
-            <img class="img-2" src="images/WhatsApp Image 2022-10-27 at 5.36.55 PM.jpeg" alt="">
+            <img class="img-2" src="images/5264971_img20170505231437490_jpeg087816f08a6085d2f0dd881f6b3e4cee.jpeg" alt="">
             <h3>Packing Bags</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, cumque? Fugit obcaecati impedit quas debitis
-                quasi
-                possimus consectetur asperiores nemo. Quidem doloribus explicabo recusandae, est dignissimos neque eligendi
-                magnam
-                corporis!</p>
+            <p>A strong type of nylon capable of holding up to twenty sachets of water without tearing apart.</p> <br>
+            <p class="price-2">*price:#7000</p>
         </div>
        </div>
             </section>
 
-            <section class="services">
+            <section class="services" id="services">
                 <div class="our-services">
                     <h1>Our services</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum iste unde consectetur a aliquam voluptas asperiores eaque facere voluptatibus? Iste error quam esse velit. Blanditiis quibusdam sint quidem officiis corporis.</p>
+                    <p>We at Ayosola Taam Ventures Produce Quality Nylons, Printed Rolls, Packing Bags. We give our customers the satisfaction
+                    they need because we give them quality nylons that don't have leakages. Just like our motto <span class="quality">'Quality are not Compromised'</span></p>
                 </div>
                 <div class="services-img" id="services-img">
                     <div class="box"><img src="images/WhatsApp Image 2022-10-27 at 5.36.55 PM.jpeg" alt=""></div>
@@ -80,33 +82,35 @@
                     <div class="box"><video src="videos/VID-20230526-WA0001.mp4"></video></div>
                     <div class="box"><img src="images/IMG-20230612-WA0007.jpg" alt=""></div>
                     <div class="box"><img src="images/IMG-20221108-WA0005.jpg" alt=""></div>
+                    <div class="box"><img src="images/one packing bag.jpeg" alt=""></div>
+                    <div class="box"><img src="images/IMG20221115113434.jpg" alt=""></div>
                 </div>
             </section>
 
-            <section id="fourth-section" class="team">
+            <section id="team" class="team">
                 <div class="t-p">
                     <h1>The Team</h1>
                 </div>
               <div class="div-team">
                 <div class="team-img">
                     <img src="images/IMG-20221108-WA0005.jpg" alt="">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, omnis.</p>
+                    <p>Ayodele Shola.</p>
                     <h3>Founder</h3>
                 </div>
                 <div class="parags">
                     <img src="images/IMG-20230419-WA0004.jpg" alt="">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, recusandae.</p>
+                    <p>Akanni Ayodele.</p>
                     <h3>Co-Founder</h3>
                 </div>
-                <div class="position">
+                <!-- <div class="position">
                     <img src="images/IMG-20230612-WA0007.jpg" alt="">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, recusandae.</p>
                     <h3>Accountant</h3>
-                </div>
+                </div> -->
               </div>
             </section>
 
-            <section id="Contact" class="contact-us">
+            <section id="contact" class="contact-us">
                 <div class="div-contact">
                     <h1>Contact Us</h1>
                     <img src="images/undraw_personal_information_re_vw8a.svg" alt="">
@@ -121,7 +125,7 @@
                         <input type="email" id="email" name="email" placeholder="Enter your email" required>
 
                         <label for="company">Your Company's Name:</label>
-                        <input type="company" id="company" name="company" placeholder="Enter your company name" required>
+                        <input type="company" id="company" name="company" placeholder="Enter your company name">
                     
                         <label for="phone">Phone No:</label>
                         <input type="phone" id="phone" name="phone" placeholder="Enter your Phone No" required>
@@ -134,7 +138,7 @@
                 </div>
             </section>
 
-    <footer>
+    <footer id="about">
         <div class="last-section">
             <div class="container">
                 <div class="content-section">
@@ -142,22 +146,30 @@
                         <h1>About Us</h1>
                     </div>
                     <div class="content">
-                        <h3>Lorem ipsum, dolor sit amet consectetur adipisici</h3>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero harum molestias itaque velit molestiae rerum nulla esse veritatis ea quo cupiditate ipsa minima quia quis nobis architecto, distinctio officiis mollitia! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam ea animi dignissimos alias in vel ab iure minima nam repellendus, sit iste cumque modi facere. Sunt commodi consequatur deserunt officia. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore deleniti aut eum tempora laudantium vel doloremque nostrum magni dolor, voluptatum porro animi iure! Ratione deleniti aspernatur maiores mollitia eaque! Natus.</p>
+                        <h3>A little About Us</h3>
+                        <p>ATV is a company that produces sachet water nylon for companies that produce sachet water or pure water companies and we
+                        also sell packing bags in bulk.</p> <br>
+                        <p>ayosolataamventures@gmail.com <br>
+                            +2348035141434, +2348038966918</p> <br>
+                            <h4>Our Location:</h4> 
+                            <p>7, aboaba street oke ira, ogba ikeja, lagos state.</p>
                         <div class="button">
-                            <a href="">Read More</a>
+                            <a href="">Learn More</a>
                         </div>
                     </div>
                     <div class="social">
-                        <a href=""><i class="fab fa-facebook"></i></a>
-                        <a href=""><i class="fab fa-twitter"></i></a>
-                        <a href=""><i class="fab fa-instagram"></i></a>
+                        <a href="https://web.facebook.com/people/Ayosola-Taam-Ventures/100087864661447/"><i class="fab fa-facebook"></i></a>
+                        <a href="https://twitter.com/AYODELEOLUSHOL8"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/ikeoluwa_775/"><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
                 <div class="image-section">
                     <img src="images/Blue Yellow Modern Travel Agent Flyer (1).png" alt="">
                 </div>
             </div>
+        </div>
+        <div class="div-footer">
+            <p>copyright &copy; Ayosola Taam Ventures 2023</p>
         </div>
     </footer>
 </body>

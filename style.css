@@ -10,6 +10,9 @@ html{
    .topnav {
        overflow: hidden;
        background-color: #333;
+       position: fixed;
+       width: 100%;
+       z-index: 9000;
    }
 
    .topnav a {
@@ -89,6 +92,14 @@ html{
     height: 556px;
         width:519px ;
 }
+.price-1, .price-2{
+    font-size: 1rem;
+    font-weight: 500;
+}
+.quality{
+    color: #24569c;
+    font-weight: 500;
+}
 .services{
     text-align: center;
     justify-content: center;
@@ -165,11 +176,6 @@ html{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-}
-.div-contact{
-    /* display: block;
-    justify-content: center;
-    align-items: center; */
 }
 .div-contact h1{
     text-decoration: underline;
@@ -283,7 +289,7 @@ html{
     border-radius: 20px;
  }
  .content-section .content .button a:hover{
-    background-color: #a52a2a;
+    background-color: #ff9900;
     color: #fff;
  }
  .content-section .social{
@@ -299,6 +305,10 @@ html{
     color: #333;
  }
 
+ .div-footer{
+    text-align: center;
+
+ }
 
 
 @media (max-width:1200px) {
@@ -319,6 +329,9 @@ html{
     .contact-us{
         flex-direction: column;
     }
+        .content h4 {
+            text-align: center;
+        }
     .form{
         /* max-width: 500px; */
         /* max-width: 100%; */
@@ -354,6 +367,7 @@ html{
     
     .topnav.responsive {
         position: relative;
+        position: fixed;
     }
     
     .topnav.responsive .icon {
@@ -399,6 +413,9 @@ width: 80%;
     text-align: center;
 }
 .content h3{
+    text-align: center;
+}
+.content h4{
     text-align: center;
 }
 
