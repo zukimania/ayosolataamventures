@@ -320,7 +320,7 @@ html{
     }
     .form{
         /* max-width: 500px; */
-        max-width: 100%;
+        /* max-width: 100%; */
             padding: 10px;
             margin-top: 0%;
     }
@@ -333,9 +333,6 @@ html{
 @media (max-width: 480px) {
     .services-img{
         columns: 1;
-    }
-    .form-container{
-        max-width: 0%;
     }
 }
 
