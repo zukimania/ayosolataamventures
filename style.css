@@ -104,7 +104,7 @@ html{
 }
 .services-img{
     width: 100%;
-    margin: 20px auto;
+    margin: 15px auto;
     columns: 4;
     column-gap: 20px;
     opacity: 0;
@@ -151,6 +151,8 @@ html{
 }
 .div-team p{
     color: #fff;
+    width: 50%;
+    margin-left: 25%;
 }
 .div-team img{
     width: 150px;
@@ -162,8 +164,69 @@ html{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    padding-left: 25%;
-    max-width: 1000px;
+}
+.div-contact{
+    /* display: block;
+    justify-content: center;
+    align-items: center; */
+}
+.div-contact h1{
+    text-decoration: underline;
+    text-decoration-color: #24569c;
+    text-align: center;
+    margin-top: 2rem;
+}
+.div-contact img{
+    width: 100%;
+    /* scale: 0.7; */
+    /* margin-top: -20%; */
+}
+.contact-us {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 10px;
+}
+.form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #24569c;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+/* Styling form labels */
+.form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+    font-weight: bold;
+    text-align: left;
+}
+
+/* Styling form inputs */
+.form input[type="text"],
+.form input[type="email"],
+.form input[type="company"],
+.form input[type="phone"],
+.form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: start;
+}
+
+/* Styling form button */
+.form button.submit {
+    background-color: #ff9900;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
 .last-section{
     width: 100%;
@@ -192,9 +255,10 @@ html{
  .content-section .title{
     text-transform: uppercase;
     font-size: 28px;
+    margin-top: 30px;
  }
  .content-section .content h3{
-    margin-top: 20px;
+    margin-top: 30px;
     color: #5d5d5d;
     font-size: 21px;
  }
@@ -205,7 +269,7 @@ html{
     line-height: 1.5;
  }
   .content-section .content .button{
-    margin-top: 30px;
+    margin-top: 40px;
 
   }
  .content-section .content .button a{
@@ -251,6 +315,15 @@ html{
     .services-img .box img{
         margin-left: 1rem;
     }
+    .contact-us{
+        flex-direction: column;
+    }
+    .form{
+        /* max-width: 500px; */
+        max-width: 100%;
+            padding: 10px;
+            margin-top: 0%;
+    }
 }
 @media (max-width: 768px) {
     .services-img{
@@ -260,6 +333,9 @@ html{
 @media (max-width: 480px) {
     .services-img{
         columns: 1;
+    }
+    .form-container{
+        max-width: 0%;
     }
 }
 
