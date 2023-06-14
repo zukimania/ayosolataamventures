@@ -310,7 +310,11 @@ html{
 
  }
 
-
+@media screen and (max-width: 1290px) {
+    .product{
+        flex-direction: column;
+    }
+}
 @media (max-width:1200px) {
     .services-img{
         width: calc(100% - 40px);
