@@ -310,7 +310,7 @@ html{
 
  }
 
-@media screen and (max-width: 1290px) {
+@media screen and (max-width: 1230px) {
     .product{
         flex-direction: column;
     }
