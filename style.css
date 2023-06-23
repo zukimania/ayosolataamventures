@@ -106,8 +106,8 @@ html{
     align-items: center;
 }
 .our-services p{
-    max-width: 1000px;
-    padding-left: 25%;
+    max-width: 40%;
+    margin-left: 29.5%;
 }
 .our-services h1{
     text-decoration: underline;
@@ -325,7 +325,8 @@ html{
         padding: 0%;
     }
     .our-services p{
-        padding: 0px;
+        max-width: max-content;
+        margin-left: 0px;
     }
     .services-img .box img{
         margin-left: 1rem;
