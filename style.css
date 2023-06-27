@@ -91,6 +91,7 @@ html{
 .img-1, .img-2{
     height: 556px;
         width:519px ;
+        border-radius: 30px;
 }
 .price-1, .price-2{
     font-size: 1rem;
